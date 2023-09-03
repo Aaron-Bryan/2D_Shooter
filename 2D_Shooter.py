@@ -243,11 +243,6 @@ class game_body(pygame.sprite.Sprite):
 					self.in_air = False
 					dy = tile[1].top - self.rect.bottom
 
-		#Temporary Ground
-		#if self.rect.bottom + dy > 300:
-		#	dy = 300 - self.rect.bottom
-		#	self.in_air = False
-
 		#Check if body collides with the exit sign
 		level_complete = False
 		if pygame.sprite.spritecollide(self, exit_group, False):
